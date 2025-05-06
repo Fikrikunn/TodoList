@@ -14,9 +14,12 @@ const App = () => {
         <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="relative z-10 w-full h-screen overflow-y-auto">
-        <div className="flex justify-center w-full min-h-full">
-          <div className="w-full max-w-md px-4 py-8">
+      <div className="absolute inset-0 z-10 overflow-y-auto">
+        <div className="flex justify-center items-start min-h-full w-full py-8 px-2 sm:px-4">
+          <div className="w-full max-w-md px-2 sm:px-4 mt-10">
+            <h1 className="text-white text-2xl sm:text-3xl font-bold text-center mb-4">
+            What’s on Your <br />Agenda Today?
+            </h1>
             <Todo />
           </div>
         </div>
